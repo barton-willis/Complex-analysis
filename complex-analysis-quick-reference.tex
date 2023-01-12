@@ -30,6 +30,8 @@
 \newcommand{\complex}{\mathbf{C}} 
 \newcommand{\ball}{\mathrm{ball}}
 \newcommand{\integers}{\mathbf{Z}} 
+\newcommand{\im}{\mathrm{i}}
+\newcommand{\euler}{\mathrm{e}}
 \newcommand{\ssep}{\mid}
 \newcommand{\arcsec}{\mathrm{arcsec}}
 \newcommand{\arccsc}{\mathrm{arccsc}}
@@ -133,7 +135,7 @@
 \hline
 \end{tabular}
 
-\section*{Named sets}
+\section*{Named Sets}
 \begin{minipage}[l]{0.15\textwidth}
     \begin{tabular}{|L | L |} \hline 
         \mathrm{empty\,\, set} & \varnothing \\ 
@@ -151,7 +153,7 @@
         \end{tabular}              
 \end{minipage}
 
-\section*{Set symbols}
+\section*{Set Symbols}
 \begin{minipage}[l]{0.15\textwidth}
     \begin{tabular}{|L | L|} \hline
         \mbox{Meaning}  & \mbox{Symbol} \\ \hline
@@ -169,7 +171,7 @@
         \end{tabular}   
 \end{minipage}
 
-\section*{Logic symbols}
+\section*{Logic Symbols}
 \begin{minipage}[l]{0.15\textwidth}
     \begin{tabular}{|L | L|} \hline 
         \mbox{Meaning}  & \mbox{Symbol} \\ \hline 
@@ -189,7 +191,7 @@
     \end{tabular}   
 \end{minipage}
 
-\section*{Function notation}
+\section*{Function Notation}
 \begin{tabular}{|L | L|} \hline 
     \dom(F) &   \mbox{domain of function } F \\
     \range(F) &   \mbox{range of function } F \\
@@ -198,18 +200,47 @@
     A \to B   & \mbox{set of functions from } A \mbox { to } B \\ \hline
 \end{tabular}
 
-
-
-
-
-\section*{Triangle inequalities}
-For all $x,y \in \complex$, we have
+\section*{Magnitude \& Conjugate}
+For all \(a,b \in \reals\)
 \begin{alignat*}{1}
-    |x+y| &\leq |x| + |y| \\
-    \big | |x| - |y|  \big |  &\leq |x-y|    
+   |a + \im b| &= \sqrt{a^2+b^2} \\
+   \overline{a + \im b} &= a - \im b
+\end{alignat*}
+For all \(x,y,z \in \complex\), we have
+\begin{alignat*}{1}
+   &|x y| = |x| |y| \\
+    &|x+y| \leq |x| + |y| \\
+    &\big | |x| - |y|  \big |  \leq |x-y|    \\
+    &\overline{xy} = \overline{x} \overline{y} \\
+    &\frac{1}{z} = \frac{\overline{z}}{|z|^2} (\mbox{ for } z \neq 0) \\
+    &\overline{\left(\frac{x}{y} \right)} = \frac{\overline{x}} {\overline{y}} \\
 \end{alignat*}
 
+\section*{Complex Exponential}
+For $x,y \in \reals$
+\begin{alignat*}{1}
+  &\euler^{\im y} = \cos(y) + \im \sin(y) \\
+  &\euler^{x + \im y} = \euler^{x} \left(\cos(y) + \im \sin(y) \right)
+\end{alignat*}
+For all $z_1, z_2 \in \complex$,
+\begin{alignat*}{1}
+    &\euler^{z_1 + z_2} = \euler^{z_1} \euler^{z_2}\\
+    &\left[\euler^{z_1} =  \euler^{z_2} \right]
+     \equiv \left[z_1 - z_2 = 2 \uppi n, n \in \integers \right]
+\end{alignat*}
 
+\section*{Argument \& Polar form}
+For all \(z \in \complex_{\neq 0}\), there is a unique \(\theta \in (-\uppi, \uppi]\) such that
+\begin{alignat*}{1}
+   &z = |z| (\cos(\theta) + \im \sin(\theta)) \\
+   &\arg(z) = \theta
+\end{alignat*}
+We have
+\begin{alignat*}{1}
+  \sqrt{z} &= \sqrt{|z|} (\cos(\theta/2) + \im \sin(\theta/2)) \\
+  z^a &= |z|^a  (\cos(\theta/a) + \im \sin(\theta/a))  (\mbox{ for } z \in \reals_{\neq 0}) \\
+  \log(z) &= \log(|z|) + \im \arg(z)
+\end{alignat*}
 
 
 \vfill
