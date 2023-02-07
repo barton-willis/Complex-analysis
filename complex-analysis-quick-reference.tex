@@ -242,7 +242,57 @@ We have
   \log(z) &= \log(|z|) + \im \arg(z)
 \end{alignat*}
 
+\section*{Topology \& Disks}
+For $a \in \complex$ and $r \in \reals_{>0}$, we define
+\begin{align*}
+  D[a,r] &= \{z \in \complex | |z-a| < r \}, \\
+  D^\prime[a,r] &= \{z \in \complex | 0 < |z-a| < r \}, \\
+  C[a,r] &= \{z \in \complex | |z-a| = r \}.
+\end{align*}
 
+Let $G$ be a subset of $\complex$. We say 
+\begin{itemize}
+  \item $z$ is an \emph{interior point of} $G$ provided
+  \((\exists r \in \reals_{>0})(D[z,r] \subset G) \).
+
+  \item $z$ is a \emph{boundary point of} $G$ provided
+  \((\forall r \in \reals_{>0})(D[z,r] \cap G \neq \varnothing \land
+  D[z,r] \cap G^C \neq \varnothing \}\).
+
+  \item $z$ is an \emph{acculumation point of} $G$ provided
+  \((\forall r \in \reals_{>0})(D^\prime [z,r] \cap G \neq \varnothing \}\).
+
+  
+\end{itemize}
+
+\section*{Limits}
+
+Let $G$ be a subset of $\complex$, $z_o$ be an accumulation point of $G$, and $F \in G \to \complex$.
+We say $F$ \emph{has a limit towards} $z_o$ provided
+\begin{alphalist}
+\item $\exists L \in \complex$
+\item $\forall \varepsilon \in \reals_{>0}$
+\item $\exists \delta  \in \reals_{>0}$
+\item $\forall z \in D[z_o, \delta] $
+\item we have $|F(z) - L| < \varepsilon$.
+\end{alphalist}
+
+\section*{Continuity}
+
+Let $G$ be a subset of $\complex$ and let $z_o \in \dom{F}$. We say $F$ \emph{is continuous at} $z_o$ provided
+\begin{alphalist}
+\item $\forall \varepsilon \in \reals_{>0}$
+\item $\exists \delta  \in \reals_{>0}$
+\item $\forall z \in D[z_o, \delta] $
+\item we have $|F(z) - F(z_o)| < \varepsilon$.
+\end{alphalist}
+
+\section*{Derivatives}
+Let $G$ be a subset of $\complex$ and let $z_o$ be an interior point of $G$. We say $F$ \emph{is differentiable at} $z_o$ provided 
+\begin{equation*}
+  \lim_{z\to z_o} \frac{F(z) - F(z_o)}{z-z_o}
+\end{equation*}
+exists.
 \vfill
 \noindent {Revised \today. Barton Willis is the author of this work. This work is
 licensed under Attribution 4.0 International (CC BY 4.0) \,  \qrcode[height=0.15in]{https://creativecommons.org/licenses/by/4.0/}. For the current version of
