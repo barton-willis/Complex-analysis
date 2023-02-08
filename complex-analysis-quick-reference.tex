@@ -39,6 +39,8 @@
 \newcommand{\glb}{\mathrm{glb}}
 \newcommand{\lub}{\mathrm{lub}}
 \newcommand{\length}{\mathrm{length}}
+\newcommand{\Arg}{\mathrm{Arg}}
+
 \usepackage{mathtools}
 \DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
 \usepackage{amsmath,amssymb,textcomp}
@@ -230,7 +232,8 @@ For all $z_1, z_2 \in \complex$,
 \end{alignat*}
 
 \section*{Argument \& Polar form}
-For all \(z \in \complex_{\neq 0}\), there is a unique \(\theta \in (-\uppi, \uppi]\) such that
+For all \(z \in \complex_{\neq 0}\), there is 
+\(\theta \in \reals\) such that
 \begin{alignat*}{1}
    &z = |z| (\cos(\theta) + \im \sin(\theta)) \\
    &\arg(z) = \theta
@@ -238,10 +241,18 @@ For all \(z \in \complex_{\neq 0}\), there is a unique \(\theta \in (-\uppi, \up
 We have
 \begin{alignat*}{1}
   \sqrt{z} &= \sqrt{|z|} (\cos(\theta/2) + \im \sin(\theta/2)) \\
-  z^a &= |z|^a  (\cos(\theta/a) + \im \sin(\theta/a))  (\mbox{ for } z \in \reals_{\neq 0}) \\
+  z^a &= |z|^a  (\cos(\theta/a) + \im \sin(\theta/a))  \quad (\mbox{for } a \in \reals) \\
   \log(z) &= \log(|z|) + \im \arg(z)
 \end{alignat*}
+When \(\theta \in (-\uppi, \uppi]\), we say $\theta$ is the 
+principle argument \(\Arg(z) \); further
+\begin{equation*}
+  \Arg(z) = \arg(z) - 2 \uppi \left \lceil 
+     \frac{\arg(z) - \uppi}{2 \uppi} \right \rceil.
+\end{equation*}
 
+
+ 
 \section*{Topology \& Disks}
 For $a \in \complex$ and $r \in \reals_{>0}$, we define
 \begin{align*}
@@ -259,11 +270,28 @@ Let $G$ be a subset of $\complex$. We say
   \((\forall r \in \reals_{>0})(D[z,r] \cap G \neq \varnothing \land
   D[z,r] \cap G^C \neq \varnothing \}\).
 
-  \item $z$ is an \emph{acculumation point of} $G$ provided
+  \item $z$ is an \emph{accumulation point of} $G$ provided
   \((\forall r \in \reals_{>0})(D^\prime [z,r] \cap G \neq \varnothing \}\).
+
+  \item $G$ is \emph{open} provided every member of $G$ is an
+  interior point of $G$.
+
+  \item $G$ is \emph{bounded} provided 
+    $(\exists r \in \reals_{> 0})(G \subset D[0,r])$.
+
 
   
 \end{itemize}
+
+\section*{Power Series}
+For $z \in D[0,1]$, we have
+\begin{equation*}
+  \sum_{k=0}^\infty z^k = \frac{1}{1-z}
+\end{equation*}
+For all $z \in \complex$, we have
+\begin{align*}
+   \exp(z) &= \sum_{k=0}^\infty \frac{z^k}{k!}
+\end{align*}
 
 \section*{Limits}
 
@@ -293,6 +321,16 @@ Let $G$ be a subset of $\complex$ and let $z_o$ be an interior point of $G$. We 
   \lim_{z\to z_o} \frac{F(z) - F(z_o)}{z-z_o}
 \end{equation*}
 exists.
+
+\section*{Cauchy Reimann}
+Let  $F(x+\im y) = u(x,y) + \im v(x,y)$. The function $F$
+is differentiable on a region $G$ provided for all
+$x + \im y \in G$, we have
+\begin{equation*}
+\begin{bmatrix} u \\  v \end{bmatrix}_x = 
+\begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}
+\begin{bmatrix} u \\  v \end{bmatrix}_y 
+\end{equation*}
 \vfill
 \noindent {Revised \today. Barton Willis is the author of this work. This work is
 licensed under Attribution 4.0 International (CC BY 4.0) \,  \qrcode[height=0.15in]{https://creativecommons.org/licenses/by/4.0/}. For the current version of

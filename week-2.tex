@@ -1,0 +1,100 @@
+\documentclass[12pt,fleqn,answers]{exam}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{amsmath,amssymb}
+\usepackage{epsfig}
+\usepackage{upgreek}
+\usepackage[super]{nth}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{isomath}
+\usepackage{upgreek,amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle\stackrel{\bullet}{{}}}\,}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\lub}{\mathrm{lub}} 
+\newcommand{\glb}{\mathrm{glb}} 
+\newcommand{\complex}{\mathbf{C}}
+\newcommand{\dom}{\mbox{dom}}
+\newcommand{\range}{\mbox{range}}
+\newcommand{\cover}{{\mathcal C}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\vi}{\, \mathbf{i}}
+\newcommand{\vj}{\, \mathbf{j}}
+\newcommand{\vk}{\, \mathbf{k}}
+\newcommand{\bi}{\, \mathbf{i}}
+\newcommand{\bj}{\, \mathbf{j}}
+\newcommand{\bk}{\, \mathbf{k}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\DeclareMathOperator{\Ln}{\mathrm{Ln}}
+\newcommand{\imag}{\, \mathrm{i}}
+
+\usepackage{graphicx}
+\usepackage{color}
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\newcommand\AM{\textsc{am}}
+\newcommand\PM{\textsc{pm}}
+     
+\newcommand{\quiz}{2}
+\newcommand{\term}{Spring}
+\newcommand{\due}{Friday 3 Feb \PM}
+\newcommand{\class}{MATH 365}
+\begin{document}
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{\textbf{\class}}
+\textbf{Name:} \hrulefill \\
+\noindent \makebox[3.0truein][l]{\textbf{In class work \quiz, \term \/ \the\year}}
+\textbf{Row and Seat}:\hrulefill\\
+\vspace{0.1in}
+
+
+%\noindent  In class work  \quiz\/  has questions 1 through  \numquestions \/ with a total of  \numpoints\/  points.   
+%Turn in your work at the end of class  \emph{on paper}. This assignment is due \emph{\due}.
+
+\vspace{0.1in}
+
+
+\begin{questions} 
+
+  \question  Find \emph{both} square roots of $-1 + \imag$. Express your answer in rectangular form involving nested square roots.  (AA) 
+  
+  \question Find the \emph{principal square root} of $-1 + \imag$. Express your answer in rectangular form involving nested square roots.
+  (SB) 
+  
+  \question Find the \emph{principal square root} of $\mathrm{e}^{18 \imag}$. Express your answer in rectangular form involving
+  trigonometric functions.  \textbf{Hint:}  You might like to use the fact that (DJ)
+  \[
+         \Arg(z) = \arg(z) - 2 \uppi \left \lceil \frac{\arg(z)  -  \uppi}{2 \uppi} \right \rceil.
+  \]
+  
+  \question Let $\sqrt{\phantom{x}}$ be the \emph{principal square root}. Show that $\sqrt{\overline{z}} = \overline{\sqrt{z}} $ isn't an identity.
+  \textbf{Hint:}  Try $z=-1$.  (AK)
+  
+    \question Let $\sqrt{\phantom{x}}$ be the \emph{principal square root}. Show that $\sqrt{z^2} = z $ isn't an identity.
+  \textbf{Hint:}  Try $z=-1$.   (CR)
+  
+   
+    \question Let $\sqrt{\phantom{x}}$ be the \emph{principal square root}. Show that $\sqrt{z w} = \sqrt{z} \sqrt{w} $ isn't an identity.
+  \textbf{Hint:}  Try $z=-1$ and $w=-1$.  (MS)
+  
+  
+  
+\end{questions}
+
+
+\end{document}
+
