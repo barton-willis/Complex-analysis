@@ -1,0 +1,573 @@
+\documentclass[fleqn,12pt]{exam}
+\usepackage{pifont,enumerate,url}
+\usepackage{dingbat}
+\usepackage{amsmath}
+\usepackage{fleqn}
+\usepackage{epsfig,upgreek}
+\usepackage{mathptm,color}
+\newenvironment{handlist}{
+  \begin{enumerate}[\leftthumbsup]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle \stackrel{\bullet}{{}}}\,}
+\newcommand{\complex}{\mathbf{C}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\nat}{\mathbf{N}}
+\newcommand{\imag}{\mathrm{i}}
+\newcommand{\range}{\mathrm{range}}
+\newcommand{\Arg}{\mathrm{Arg}}
+%\usepackage[euler-digits,euler-hat-accent,T1]{eulervm}
+\usepackage{fourier}
+%\definecolor{SolutionColor}{rgb}{0.9,1,1}
+\definecolor{SolutionColor}{rgb}{1,1,0.7}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+\newcommand{\reals}{\mathbf{R}}
+
+\begin{document}
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{{\bf MATH 365}}
+{\bf Name:}\hrulefill\
+\noindent \makebox[3.0truein][l]{\bf Review for Exam  1}
+%{\bf Row and Seat:}\hrulefill\
+\normalsize
+
+
+\begin{questions}
+
+\question In the context of complex numbers, know the definitions of a \emph{neighborhood, open set, closed set, connected set, bounded set}.
+\question  Find the \emph{rectangluar form} of \(\sqrt{1 + \imag} \).
+
+
+
+
+
+
+
+%\question  Explain why that for all \(z \in \complex\), we have \(\Arg(\sqrt{z}) \in \left(-\frac{\uppi}{2}, \frac{\uppi}{2}\right )\).
+
+\begin{solution}%[1.5in]
+
+\end{solution}
+
+
+\question  Explain why the solution set of  \(\sqrt{z} = -2019 + \imag\) is empty.
+
+
+\begin{solution}%[1.5in]
+
+\end{solution}
+
+\question  Using the \emph{limit of a Newton quotient}, find the derivative of \(z \in \complex \mapsto z^2\) at \(\imag\).
+
+\begin{solution}%[2.0in]
+\[
+  \lim_{x \to 5} \frac{x^2 - x - (5^2 - 5)}{x - 5} = \lim_{x \to 5} \frac{x^2 - x - 20}{x-5} =  \lim_{x \to 5} \frac{(x-5)(x+4)}{x-5} = 
+\lim_{x \to 5} (x+4) = 5+4=9.
+\]
+
+\end{solution}
+
+\question    Use the Cauchy Riemann (CR) equations to show that the function \(z \in \mathbf{C} \mapsto z + \overline{z}\)
+is not differentiable anywhere on \(\mathbf{C}\). 
+\begin{solution}%[2.5in]
+
+\end{solution}
+
+
+
+\question Find the \emph{rectangular representation} for each complex number; that is express each
+complex number  \emph{explicitly} in the form \(a + i b\), where \(a,b \in \reals\).
+
+\begin{parts}
+
+\part   \((5  + \imag) (2 + \imag) = \)
+\begin{solution}%[1.2in]
+\[\left( 5-i\right) \,\left( i+7\right) = 35 + 5 i - 7 i - i^2 = 35 - 2\, i + 1 = 36-2\,i\]
+\end{solution}
+
+\part   \(\frac{2 + \imag}{2 -  \imag} =  \)
+
+\begin{solution}%[1.2in]
+\[\frac{i+2}{i+4}= \frac{i+2}{i+4} \frac{\overline{i+4}} {{\overline{i+4}}} = \frac{2 i + 9}{17} =  \frac{2\,i}{17}+\frac{9}{17}. \]
+\end{solution}
+\part    \((2 + \imag) \overline{(3  + \imag)} = \)
+
+\begin{solution}%[1.5in]
+\[\left(2 +  \imag \right) \,\overline{(3 + \imag)} =  \left( i+2\right) \, (3+i) =  5\,i+5\]
+\end{solution}
+
+\end{parts}
+
+
+%\newpage
+
+\question  Using the definition of the limit,  show  that \(\displaystyle \lim_{z \to \imag} z^2 = -1\).
+
+%---------
+\question Find the \emph{rectangluar form} for each square root
+\begin{parts}
+
+ \part   \(\sqrt{\frac{5\,\sqrt{3}\,\imag}{2}+\frac{5}{2}}\)
+
+\begin{solution} We have
+\[
+   \frac{5\,\sqrt{3}\,\imag}{2}+\frac{5}{2} = 5\,{e}^{\frac{i\,\pi }{3}} .
+\]
+So
+\[
+    \sqrt{\frac{5\,\sqrt{3}\,\imag}{2}+\frac{5}{2}} = \sqrt{5} {e}^{\frac{i\,\pi }{6}}  = \frac{\sqrt{5}\,i}{2}+\frac{\sqrt{3}\,\sqrt{5}}{2}.
+\]
+\end{solution}
+
+ \part  \(\sqrt{-\imag}\)
+\end{parts}
+
+
+\begin{solution}
+\[
+   \sqrt{-\imag} = \frac{1}{\sqrt{2}}-\frac{i}{\sqrt{2}}.
+\] 
+\end{solution}
+
+%\question  Find the \emph{range} of the cube root function. Draw a \emph{labeled} picture of the range.
+
+%\begin{solution} For \(R \in \reals_{\geq 0} \) and \(\theta \in (-\pi,\pi]\), we have
+%\[
+%  \sqrt[3]{R e^{i \theta}} = \sqrt[3]{R} e^{i \theta / 3}.
+%\]
+%Since \(\theta \in (-\pi,\pi]\), we have \(\theta /3 \in (-\pi/3,\pi/3]\). The magnitude of a cube root has
+%no restriction, but the argument of a cube root must be in the interval \((-\pi/3,\pi/3]\). Graphically the
+%range of the cube root function is a wedge.
+%\end{solution}
+
+%\question  Solve the equation \(\sqrt[3]{z} = -1 + i\). Justify your answer.
+
+%\begin{solution}
+%Since \(\mbox{arg} ( -1 + i) \notin (-\pi/3,\pi/3]\), the number \(-1 + i\) isn't in the range of the cube root. Thus the solution %set
+%is empty. 
+
+%\textbf{TE} Knowing something about the range of a function really does matter. In the context of solving equations,
+%it's essential. The general fact is that if \(y \notin \range(F)\), the solution set of the equation \(F(x) = y\) is
+%\empty{empty}. An example is the equation
+%\[
+ % \left | x + \left|x - 8 \right | - 42 \right | = -1.
+%\]
+%Quick: what's the solution set? Since -1 isn't in the range of the absolute value function, the solution set is empty.
+
+ %Remember that squaring or cubing an equation sometimes makes the solution set larger. To illustrate,
+%the solution set of \(x=1\) is \(\{1\}\), but the solution set of \(x^2 = 1^2\) is \(\{-1,1\}\).
+%Indeed for our case
+%\[
+ % \{z \in \complex \, | \,  \sqrt[3]{z} = -1 + i \} \neq \{z \in \complex \, | \,  z = (-1 + i)^3 \}
+%\]
+
+
+%\end{solution}
+
+%\question  Show that the square root and the conjugate do not commute; that is,  show that 
+%\mbox{\( \sqrt[2] {\overline{z}} = \overline{\sqrt[2] {z}} \)} isn't an identity.
+
+%\begin{solution} We have \(\sqrt[2] {\overline{-1}} = \sqrt[2] {-1} = \imag\). But \(\overline{\sqrt[2] -1} = \overline{\imag} = -\imag \)
+
+%``Singularity is almost invariably a clue.'' ({\sc Sherlock}).
+%\end{solution}
+
+%\question  Find the \emph{rectangular} form for \( \left(\frac{\sqrt{3}}{2} + \frac{i}{2} \right)^{2014} \). The crazy
+%range reducing function \(\mathcal{S}\) might be useful; it is
+%\(
+%   \mathcal{S} = x \in \reals \mapsto x - 2 \pi \left \lceil \frac{x - \pi}{2 \pi} \right \rceil.
+%\)  
+
+%\begin{solution}
+%\[{\left( \frac{i}{2}+\frac{\sqrt{3}}{2}\right) }^{2014}=\frac{1}{2}-\frac{\sqrt{3}\,i}{2}\]
+%\end{solution}
+
+\question  Show that the function \(z \in \complex \mapsto \overline{z}  \) is \emph{continuous} at 0.
+
+\begin{solution} (See classnotes.)
+
+\end{solution}
+
+
+
+
+
+
+
+\question   Use the Cauchy Riemann (CR) equations to show that the function \(z \in \mathbf{C} \mapsto z - \overline{z}\)
+is not differentiable anywhere on \(\mathbf{C}\). 
+\begin{solution}%[2.5in]
+
+\end{solution}
+
+
+
+
+\question  Using the exponential form for the trigonometric functions, show that
+\[ 
+   \mathrm{cos}\left( x\right) \,\mathrm{sin}\left( x\right) =\frac{\mathrm{sin}\left( 2\,x\right) }{2}.
+\]
+The exponential form for cosine is \(\cos(x) = \frac{e^{i x} + e^{-i x}}{2}\).
+
+
+\begin{solution}%[3.8in]
+\end{solution}
+
+
+\question Use the definition of continuity (from the classnotes--the one with the \(\varepsilon\) and \(\delta\) in it) 
+to show that the function \(z \in \mathbf{C} \mapsto z^2\) is continuous at \(i\).
+
+\begin{solution}%[3.8in]
+\end{solution}
+
+%\newpage
+
+
+
+\question  Show that \(\sqrt{z w} = \sqrt{z} \sqrt{w} \) is \emph{not} an identity for complex \(z\) and \(w\). 
+Here the square root is the principal square root.
+
+\begin{solution}
+We have \(\sqrt{-1 \times -1} = \sqrt{1} = 1\). But \(\sqrt{-1} \sqrt{-1} = \imag \times \imag = -1\).
+
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+\question Know everything about complex number arithmetic; know what the commutative and associative
+properties are; know how to find the rectangular form of sums, products, differences, and quotients
+of complex numbers.
+ 
+\question Know what the conjugate is and know its properties.
+
+
+\question Know the definition of the argument of a complex number.
+
+\question Know how to use \(\exp(i x) = \cos(x) + i \sin(x)\) along with the rule of
+exponents to derive trigonometric identities (mostly classnotes).
+
+\question Know how the principal square root of a complex number is
+defined;
+
+\question Know the triangle inequality.
+
+
+\question Know the derivation of the CR equations
+
+\question Know the defintion of continuity  for a \(\complex \to \complex\) function.
+
+
+
+
+
+
+
+
+
+
+
+\question  Use \(\exp(i x)  = \cos(x) + i \sin(x)\) to show that
+\[
+ {\mathrm{cos}\left( x\right) }^{3}-3\,\mathrm{cos}\left( x\right) \,{\mathrm{sin}\left( x\right) }^{2}=\mathrm{cos}\left( 3\,x\right) 
+\]
+is an identity. More esthetically, the identity is \(4\,{\mathrm{cos}\left( x\right) }^{3}-3\,\mathrm{cos}\left( x\right) =\mathrm{cos}\left( 3\,x\right) \).
+
+
+
+
+\question  Find the \emph{polar} representation for the number \(-1 + i\). Use the 
+polar form to find the \emph{polar} representation for \(\sqrt{-1+i}\).
+\begin{solution}%[1.2in]
+\[i-1=\sqrt{2}\,{e}^{\frac{3\,i\,\pi }{4}}\]
+Also
+\[\sqrt{-1+i} = 2^{1/4} {e}^{\frac{3\,i\,\pi }{8}}\]
+\end{solution}
+
+
+
+\question  Using the rule of exponents along with \(\exp(i x) = \cos(x) + i \sin(x)\) to 
+show that \(\cos(2 x) = \cos^2(x) - \sin^2(x)\) is an identity.
+\begin{solution}%[2.5in]
+\[
+ \exp(2 i x) = \cos(2x) + i \sin(2x) = (\cos(x) + i \sin(x))^2 = \left(\cos^2(x) - \sin^2(x)\right) + 2 i
+  \cos(x) \sin(x).
+\]
+So \(\cos(2 x) = \cos^2(x) - \sin^2(x)\) is an identity.
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+\question Know the triangle inequality.
+
+
+
+
+
+
+\question  For \(x \in \reals\), we have the identities \(\sin(x) = \frac{e^{i x} - e^{-i x}}{2 i}\) and \(\cos(x) =  \frac{e^{i x} + e^{-i x}}{2} \).
+Use these facts along with facts about the complex exponential function to  show that
+\[
+   {\mathrm{sin}\left( x\right) }^{3}=-\frac{\mathrm{sin}\left( 3\,x\right) -3\,\mathrm{sin}\left( x\right) }{4}
+\]
+is an identity.
+
+\begin{solution} We have
+\begin{align}
+  \sin^3(x) &= \frac{{\left( {e}^{i\,x}-{e}^{-i\,x}\right) }^{3}}{- i 8}, \\
+            &= \frac{i\,{e}^{3\,i\,x}}{8}-\frac{3\,i\,{e}^{i\,x}}{8}+\frac{3\,i\,{e}^{-i\,x}}{8}-\frac{i\,{e}^{-3\,i\,x}}{8}, \\
+            &= \frac{3\,\mathrm{sin}\left( x\right) }{4}-\frac{\mathrm{sin}\left( 3\,x\right) }{4}.
+\end{align}
+
+\end{solution}
+
+\question  Find the \emph{rectangular} form for \( \left(\frac{\sqrt{3}\,i}{2}+\frac{1}{2} \right)^{107} \).
+
+
+
+
+\end{questions}
+\end{document}
+
+\noindent \textbf{Claim} The sequence  \(F = k \in \integers_{>1} \mapsto \sum_{\ell = 1}^k \frac{1}{\ell^2} \) is Cauchy.
+
+To show this, we start with a calculation. Suppose \(k > l > N > 1\). Then
+\begin{align}
+  | F_k - F_l | &= | \sum_{s=l+1}^k \frac{1}{s^2} |, & \mbox{(additivity of sums)} \\
+                &= \sum_{s=l+1}^k \frac{1}{s^2}, & \mbox{(everybody is positive)} \\
+                &<  \sum_{s=l+1}^k \frac{1}{s (s-1)}, &\mbox{(trick)}  \\
+                &= \sum_{s=l+1}^k \left( \frac{1}{s-1}-\frac{1}{s} \right) & \mbox{(partial fraction)} \\
+                &= \frac{1}{l} - \frac{1}{k}, & \mbox{(massive cancellation)} \\
+                & <  \frac{1}{l}, & \mbox{(bigger by dropping negativity)} \\
+                & <  \frac{1}{N}, & \mbox{(make the denominator  smaller)} 
+\end{align}
+We need \(\frac{1}{N} \leq  \varepsilon\). So all we need is to take \(N = \lceil \frac{1}{\varepsilon} \rceil \).
+\begin{questions}
+
+
+\question  Over the reals, the factorization of \({z}^{3}-1\) is \((z-1)({z}^{2}+z+1) \).
+Since \({z}^{2}+z+1 \) has no real roots, no further factorization is possible. Again, sticking
+to the real numbers, the partial fraction decomposition of \(\frac{1}{{z}^{3}-1}\) is given by
+\[
+    \frac{1}{{z}^{3}-1}=\frac{1}{3\,\left( z-1\right) }-\frac{z+2}{3\,\left( {z}^{2}+z+1\right) }.
+\]
+In the previous assignment, you discovered that over the complex numbers \(z^3-1\) factors into the 
+product of three linear terms; specifically,
+\[ 
+   z^3-1 = \left( z-1\right) \,\left( z-\frac{\sqrt{3}\,i-1}{2}\right) \,\left( z+\frac{\sqrt{3}\,i+1}{2}\right).
+\]
+This suggests the possibility that over the complex numbers, the partial fraction decomposition of \(\frac{1}{z^3-1} \)
+has the form
+\[
+  \frac{1}{z^3 -1} = \frac{A}{z-1} + \frac{B}{ z-\frac{\sqrt{3}\,i-1}{2}} + \frac{C}{ z+\frac{\sqrt{3}\,i+1}{2}},
+\]
+where \(A,B, C \in \mathbf{C}\). Show that there are such numbers \(A,B, C\).
+To do this calculation, it might be easiest to substitute 
+\[
+  \alpha \leftarrow \frac{\sqrt{3}\,i-1}{2}, \beta \leftarrow -\frac{\sqrt{3}\,i+1}{2}\,
+\]
+and use the identities
+\(
+   {\alpha}^{2}=-\alpha-1,\alpha\,\beta=1, \, {\beta}^{2}=\alpha, \, \beta + \alpha  = -1.
+\)
+
+\begin{solution} We need to find \(A,B\) and \(C\) such that
+\[
+  1 = A (z-\alpha) (z-\beta) + B  (z-1)(z-\beta) + C (z-1) (z-\alpha)
+\]
+is an identity. Substituting each of  \(z \leftarrow 1\), \(z \leftarrow \alpha\), and \(z \leftarrow \beta\) yields the
+three decoupled equations for \(A,B\) and \(C\):
+\[
+  \begin{cases}  1 &= A (1-\alpha) (1-\beta) \\ 1 &= B (\alpha-1) (\alpha-\beta) \\ 1 &= C (\beta - 1) (\beta - \alpha) \end{cases}
+  = \begin{cases}  1 &= 3 A, \\ 1 &= 3 \beta B \\ 1 &= 3 \alpha C  \end{cases} = 
+   \begin{cases} A &= \frac{1}{3} \\ B &= \frac{1}{3 \beta} \\ C &= \frac{1}{3 \alpha} \end{cases}
+\]
+We now know that for three distinct values for \(z\) (specifically for \(z = 1, z = \alpha\), and \(z = \beta\)) that
+\[
+  1 = A (z-\alpha) (z-\beta) + B  (z-1)(z-\beta) + C (z-1) (z-\alpha).
+\]
+But we need to know that equality holds not just for these three values for \(z\), but for all values of \(z\). We could expand
+the right side and show that it crunches to 1. Alternatively, we could use the fact that a second degree polynomial is uniquely 
+determined by three distinct points on its graph--this works in the real case and in the complex case.
+
+\textbf{TE} The polynomials \(z \in \mathbf{C}  \mapsto z -1\), \(z \in \mathbf{C}  \mapsto z - \alpha\),  and
+\(z \in \mathbf{C}  \mapsto z - \beta\) have no common factors, so they are said to be \emph{relatively prime.} Alternatively
+(gcd = greatest common divisor)
+\[
+  \mbox{gcd}(z \in \mathbf{C}  \mapsto z -1, z \in \mathbf{C}  \mapsto z - \alpha, z \in \mathbf{C}  \mapsto z - \beta ) = 1
+\]
+We've shown that the greatest common divisor of these three polynomials is a linear combination of the three polynomials.
+This isn't a coincidence, by the way; see, for example \url{http://en.wikipedia.org/wiki/Extended_Euclidean_algorithm}.
+\end{solution}
+
+\question  Find the \emph{range} of the cube root function. Draw a \emph{labeled} picture of the range.
+
+\begin{solution} For \(R \in \reals_{\geq 0} \) and \(\theta \in (-\pi,\pi]\), we have
+\[
+  \sqrt[3]{R e^{i \theta}} = \sqrt[3]{R} e^{i \theta / 3}.
+\]
+Since \(\theta \in (-\pi,\pi]\), we have \(\theta /3 \in (-\pi/3,\pi/3]\). The magnitude of a cube root has
+no restriction, but the argument of a cube root must be in the interval \((-\pi/3,\pi/3]\). Graphically the
+range of the cube root function is a wedge.
+\end{solution}
+
+\question  Solve the equation \(\sqrt[3]{z} = -1 + i\). Justify your answer.
+
+\begin{solution}
+Since \(\mbox{arg} ( -1 + i) \notin (-\pi/3,\pi/3]\), the number \(-1 + i\) isn't in the range of the cube root. Thus the solution set
+is empty. 
+
+\textbf{TE} Knowing something about the range of a function really does matter. In the context of solving equations,
+it's essential. The general fact is that if \(y \notin \range(F)\), the solution set of the equation \(F(x) = y\) is
+\empty{empty}. An example is the equation
+\[
+  \left | x + \left|x - 8 \right | - 42 \right | = -1.
+\]
+Quick: what's the solution set? Since -1 isn't in the range of the absolute value function, the solution set is empty.
+
+ Remember that squaring or cubing an equation sometimes makes the solution set larger. To illustrate,
+the solution set of \(x=1\) is \(\{1\}\), but the solution set of \(x^2 = 1^2\) is \(\{-1,1\}\).
+Indeed for our case
+\[
+  \{z \in \mathbf{C} \, | \,  \sqrt[3]{z} = -1 + i \} \neq \{z \in \mathbf{C}  \, | \,  z = (-1 + i)^3 \}
+\]
+
+
+\end{solution}
+
+\question  Find a simple condition on the arguments of \(z_1\) and \(z_2\) that makes \(\sqrt[3]{z_1 z_2} = \sqrt[3]{z_1} \sqrt[3]{z_2}.\)
+The simple condition should look something like \(\arg(z_1) + \arg(z_2) \in \mbox{some interval}\).
+Also, find complex numbers \(z_1\) and \(z_2\) such that \(\sqrt[3]{z_1 z_2} \neq \sqrt[3]{z_1} \sqrt[3]{z_2}.\)
+
+\begin{solution} For \(R_1, R_2 \in \reals_{\geq 0}\) and \(\theta_1, \theta_2 \in (-\pi, \pi]\), we have
+\[
+  \sqrt[3]{R_1 e^{i \theta_1}} \sqrt[3]{R_2 e^{i \theta_2}} = \sqrt[3]{R_1} e^{i \theta_1/3} \sqrt[3]{R_2} e^{i \theta_2/3}
+     = \sqrt[3]{R_1 R_2} e^{i (\theta_1 + \theta_2)/3}.
+\] 
+For positive real numbers (specifically \(R_1\) and \(R_2\)), we used the famous fact that for nonnegative numbers, 
+the product of the cube roots is the cube root of the product.
+
+Now let's examine \(\sqrt[3]{R_1 e^{i \theta_1} {R_2 e^{i \theta_2}}}\). This time, we need to be careful because
+\(\theta_1 + \theta_2\) is not automatically in the interval \((-\pi, \pi]\). To fix this, we need the crazy sawtooth
+function
+\[
+  \mathcal{A} = x \in \reals \mapsto x - 2 \pi \left \lceil \frac{x - \pi}{2 \pi} \right \rceil.
+\]
+Then 
+\[ 
+    \sqrt[3]{R_1 e^{i \theta_1} {R_2 e^{i \theta_2}}} =  \sqrt[3]{R_1 R_2 e^{i \mathcal{A} (\theta_1 + \theta_2)}} = 
+       \sqrt[3]{R_1 R_2}  e^{i \mathcal{A} (\theta_1 + \theta_2)/3} 
+\]
+For equality between \(\sqrt[3]{R_1 e^{i \theta_1}} \sqrt[3]{R_2 e^{i \theta_2}} \) and \(\sqrt[3]{R_1 e^{i \theta_1} {R_2 e^{i \theta_2}}}\),
+we need
+\[
+   \frac{\theta_1 + \theta_2}{3} = \frac{1}{3} \mathcal{A} \left(\theta_1 + \theta_2 \right)  - 2 \pi k,
+\]
+where \(k \in \integers\). Using the formula for \(\mathcal{A}\) and solving for the term that involves the ceiling function gives
+\[
+  \left \lceil \frac{\theta_1 + \theta_2 - \pi}{2 \pi} \right \rceil = 3 k
+\]
+So \(\frac{\theta_1 + \theta_2 - \pi}{2 \pi} \) must round up to a multiple of three. So
+\[
+   \frac{\theta_1 + \theta_2 - \pi}{2 \pi} \in \dots \cup (-4,-3] \cup (-1,0] \cup (2,3] \cup (5,6] \cup \dots 
+\]
+Solving for  \( \theta_1 + \theta_2 \) gives
+\[
+   \theta_1 + \theta_2 \in \dots \cup (-7 \pi, -5 \pi] \cup (-\pi, \pi] \cup (5 \pi, 7 \pi] \cup (11 \pi, 13 \pi] \cup.
+\]
+But \(\theta_1 + \theta_1 \in (-2 \pi, 2 \pi]\), so the condition simplifies to 
+\(
+    \theta_1 + \theta_2 \in (-\pi,\pi]
+\).
+
+\quad To illustrate, we have
+\[
+  \sqrt[3]{(-1) (-1)} = \sqrt[3]{1} = \sqrt[3]{1} e^{i \frac{0}{3}} = 1.
+\]
+But
+\[
+  \sqrt[3]{-1} \sqrt[3]{-1} = \sqrt[3]{1} e^{i \pi /3}  \sqrt[3]{1} e^{i \pi /3} = e^{2 \pi i  /3} = \frac{\sqrt{3}\,i}{2}-\frac{1}{2}.
+\]
+Thus \(\sqrt[3]{(-1) (-1)} \neq \sqrt[3]{-1} \sqrt[3]{-1} \). This isn't surprising since
+\(
+   \mbox{arg}(-1) + \mbox{arg}(-1) = \pi + \pi  = 2 \pi \notin (-\pi,\pi]
+\). An example where the cube root of the product is the product of the cube roots is:
+\[
+  \sqrt[3]{1+i} \sqrt[3]{1-i} = \sqrt[3]{\sqrt{2}}   e^{3 \pi i / 4}  \sqrt[3]{\sqrt{2}} e^{-3 \pi i / 4} = \sqrt[3]{\sqrt{2}} \sqrt[3]{\sqrt{2}} = \sqrt[3]{2},
+\]
+and
+\(
+  \sqrt[3]{(1+i)(1-i)} = \sqrt[3]{2}
+\).
+For this example, our criteria is satisfied: we have
+\[
+  \mbox{arg}(1-i) + \mbox{arg}(1+i) = \frac{3 \pi}{4} - \frac{3 \pi}{4} = 0 \in (-\pi,pi].
+\]
+
+\end{solution}
+\question  For \(x \in \reals\), we have the identities \(\sin(x) = \frac{e^{i x} - e^{-i x}}{2 i}\) and \(\cos(x) =  \frac{e^{i x} + e^{-i x}}{2} \).
+Use these facts along with facts about the complex exponential function to  show that
+\[
+   {\mathrm{sin}\left( x\right) }^{3}=-\frac{\mathrm{sin}\left( 3\,x\right) -3\,\mathrm{sin}\left( x\right) }{4}
+\]
+is an identity.
+
+\begin{solution} We have
+\begin{align}
+  \sin^3(x) &= \frac{{\left( {e}^{i\,x}-{e}^{-i\,x}\right) }^{3}}{- i 8}, \\
+            &= \frac{i\,{e}^{3\,i\,x}}{8}-\frac{3\,i\,{e}^{i\,x}}{8}+\frac{3\,i\,{e}^{-i\,x}}{8}-\frac{i\,{e}^{-3\,i\,x}}{8}, \\
+            &= \frac{3\,\mathrm{sin}\left( x\right) }{4}-\frac{\mathrm{sin}\left( 3\,x\right) }{4}.
+\end{align}
+
+\end{solution}
+
+\end{questions}
+\end{document}
+
+\question  Work Exercise 1.2 on page 4.
+
+\question  Show that the sequence \(k \in \mathbf{N} \mapsto k\) diverges.
+
+\begin{solution} Let \(L \in \reals\) and \(M \in N\); we'll show that there
+is \(k \in M \dots \infty\) such that \(k \geq L + \frac{1}{2}\). Define
+\(k = \mbox{max} \{ \lceil L + \frac{1}{2} \rceil, M \}\). Then \(k \in M \dots \infty\); and
+further
+\begin{align*}
+  k &=  \mbox{max} \{ \lceil L + \frac{1}{2} \rceil, M \}, \\
+    &\geq \lceil L + \frac{1}{2} \rceil, \\
+    &\geq L + \frac{1}{2}.
+\end{align*}
+\begin{handlist}
+\item \(|F_k - L | \geq \varepsilon \) is equivalent to \(F_k \geq L + \varepsilon\) or
+\(F_k \leq  L - \varepsilon\). For this problem \(F_k = k\) and \( \varepsilon = \frac{1}{2}\).
+\end{handlist}
+
+\end{solution}
+
+\end{questions}
+
+\end{document}
