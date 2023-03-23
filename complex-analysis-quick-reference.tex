@@ -40,7 +40,7 @@
 \newcommand{\lub}{\mathrm{lub}}
 \newcommand{\length}{\mathrm{length}}
 \newcommand{\Arg}{\mathrm{Arg}}
-
+\newcommand{\Ln}{\mathrm{Ln}}
 \usepackage{mathtools}
 \DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
 \usepackage{amsmath,amssymb,textcomp}
@@ -251,6 +251,15 @@ principle argument \(\Arg(z) \); further
      \frac{\arg(z) - \uppi}{2 \uppi} \right \rceil.
 \end{equation*}
 
+\section*{Principal logarithm}
+\begin{equation*}
+\Ln(z) = \ln(|z|) + \im \Arg(z).
+\end{equation*}
+The function $\Ln$ is holomorphic on $\complex \setminus (-\infty,0]$
+and its domain is $\complex_{\neq 0}$. Its derivative is
+\begin{equation*}
+  \Ln^\prime(z) = \frac{1}{z}, \quad z \in \complex \setminus (-\infty,0].
+\end{equation*}
 
  
 \section*{Topology \& Disks}
