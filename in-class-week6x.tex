@@ -3,6 +3,7 @@
 \usepackage{dingbat}
 \usepackage{amsmath,amssymb}
 \usepackage{epsfig}
+
 \usepackage[]{hyperref}
 \usepackage{geometry}
 \geometry{letterpaper, margin=0.5in}
@@ -29,6 +30,7 @@
 \newcommand{\dom}{\mbox{dom}}
 \newcommand{\cover}{{\mathcal C}}
 \newcommand{\integers}{\mathbf{Z}}
+\newcommand{\euler}{\mathrm{e}}
 \newcommand{\vi}{\, \mathbf{i}}
 \newcommand{\vj}{\, \mathbf{j}}
 \newcommand{\vk}{\, \mathbf{k}}
@@ -57,25 +59,36 @@
 %{\bf Row:}\hrulefill\
 \vspace{0.1in}
 
+\def\Xint#1{\mathchoice
+   {\XXint\displaystyle\textstyle{#1}}%
+   {\XXint\textstyle\scriptstyle{#1}}%
+   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
+   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+   \!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+You may use your own paper to \emph{neatly} write your answers to these questions. This assignment is due Wednesday
+19 April.
 \begin{questions} 
 
-\question Sketch the parametrically defined curve $x = \frac{t^2}{1+t^2}, y = -\frac{t}{1+t^2}$, where $t  \in \reals$.
-Suggestion:  Use Desmos.
 
-\question Algebraically show that the curve from part one is a circle with one point missing.
+\question Evaluate each principle value integral.  
+\begin{parts}
+ \part [2 ] $\dashint_{-\infty}^\infty \frac{1}{x^2 + 2 x + 2}\, \mathrm{d} x$
 
-\question Solve the equation $w  = \frac{z}{z + \imag}$ for $z$.
 
-\question Show that the function $z \in \complex_{\neq -\imag} \mapsto \frac{z}{z + \imag}$ is one-to-one.
+ \part [2 ] $\dashint_{-\infty}^\infty \frac{1}{x^2 + 2 x + 2}\, \euler^{\imag w x}
+ \mathrm{d} x$, where $w > 0$.
 
-\question Find the inverse to the function $z \in \complex_{\neq -\imag} \mapsto \frac{z}{z + \imag}$.
+ 
+ \part [2 ] $\dashint_{-\infty}^\infty \frac{1}{x^2 + 2 x + 2}\, \euler^{\imag w x}
+ \mathrm{d} x$, where $w < 0$.
+ 
+ 
 
-\question For a complex variable $w$, say $w = a+  \imag b$, find the imaginary part of $\frac{\imag w}{1-w}$.
-
-\question In the $a,b$ plane, sketch a graph of the equation $a^2 - a + b^2 = 0$.
-
-\question Find the range of function $x \in \reals \mapsto \frac{x}{x + \imag}$.
-
+\end{parts}
 
 \end{questions}
 \end{document}

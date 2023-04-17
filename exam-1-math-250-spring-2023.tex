@@ -1,0 +1,130 @@
+\documentclass[12pt,fleqn]{exam}
+\usepackage{pifont,bbding,url}
+\usepackage{dingbat}
+\usepackage{amsmath}
+\usepackage{centernot}
+\usepackage{fleqn}
+\usepackage{epsfig}
+\usepackage{pdfpages}
+\usepackage{fourier} %{mathptm}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage{xcolor}
+\usepackage{enumerate}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
+
+
+\usepackage{amssymb, enumerate}
+\shadedsolutions
+%\definecolor{SolutionColor}{rgb}{0.9,1,1}
+\definecolor{SolutionColor}{rgb}{1,1,0.7}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle \stackrel{\bullet}{{}}}\,}
+\begin{document}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bk}{mathbf{k}}
+
+\newcommand{\Mod}[1]{\ \mathrm{mod}\ #1}
+\newcommand{\ex}{I}
+\newenvironment{alphalist}{
+  \begin{enumerate}[(a)]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\newenvironment{handlist}{
+  \begin{enumerate}[\leftthumbsup]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{{\bf MATH 250}}
+{\bf Name:}\hrulefill\
+\noindent \makebox[3.0truein][l]{\bf Exam \ex \/}
+{\bf Row:}\hrulefill\
+
+\large
+
+\vspace{0.1in}
+
+\noindent Exam \ex\/  has questions 1 through  \numquestions \/ with a total of \numpoints \/ points.  This exam is printed on both sides of the paper.
+
+\begin{questions}
+
+\question True or False:
+
+\begin{parts}
+
+ \part [5] \underline{$\phantom{xxxxxx}$}  $\varnothing = \{\varnothing \}.$
+ \part [5] \underline{$\phantom{xxxxxx}$}  $\varnothing \subset \{\varnothing \}.$
+ \end{parts}
+ 
+ \question [10] Write the \emph{contrapositive} of the statement
+    \emph{If an integer $n$ is even, then $2 n +  2$ is even.}
+\begin{solution}[2.2in]
+\end{solution}
+
+ \question [10] Write the \emph{converse} of the statement
+ \emph{If an integer $n$ is even, then $2 n +  2$ is even.}
+\begin{solution}[2.2in]
+\end{solution}
+
+\question [10] Give an example of a \emph{conditional statement that is true}, but whose converse is false.
+\begin{solution}%[2.2in]
+\end{solution}
+ 
+ \newpage
+\question Enumerate the members of each set:
+
+\begin{parts}
+
+\part [10]  \( \{1,2,\sqrt{5} \} \cap \{1,2, \sqrt{2023}\} \)
+\begin{solution}[1.5in]
+
+
+\end{solution}
+\part [10]  \(  \{1,2,\sqrt{5} \}  \cup \{1,2, \sqrt{2023}\} \)
+\begin{solution}[1.5in]
+\end{solution}
+
+\part [10]  \(  \{1,2,\sqrt{5} \}  \setminus \{1,2, \sqrt{2023}\}  \)
+\begin{solution}[1.5in]
+\end{solution}
+\end{parts}
+
+
+\question [10] Using a truth table, show that \mbox{\(P \implies Q\)} is logically equivalent to \mbox{ \(\lnot Q \implies \lnot P\)}.
+\begin{solution}%[2.50in]
+
+\end{solution}
+
+\vfill
+\newpage
+ 
+ \question Let $A$ and $B$ be sets.
+ \begin{parts}
+ 
+ \part [10] Write the \emph{contrapositive} of the statement $A \setminus B  = A \implies A \cap B = \varnothing$.
+
+ \begin{solution}[2.50in]
+
+\end{solution}
+
+\part [10] Using the contrapositive, show that $A \setminus B  = A \implies A \cap B = \varnothing$.
+
+\end{parts}
+
+\vfill 
+\end{questions}
+\end{document}
